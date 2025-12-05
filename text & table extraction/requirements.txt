@@ -1,0 +1,5 @@
+Using docling an open source IBM tool for table extraction and pdf plumber for text extraction from pdf
+
+!pip install docling docling-ibm-models pandas
+
+!pip install pdfplumber
