@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG Answer</title>
+    <style>
+        body {
+            background: #eef0ff;
+            font-family: Arial;
+            padding: 30px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            width: 60%;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 16px;
+            background: #4f46e5;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            background: #4338ca;
+        }
+
+        /* ---- Rendered HTML (tables, headings, lists) ---- */
+        .answer-html table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .answer-html th, .answer-html td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+        }
+
+        .answer-html h1, .answer-html h2, .answer-html h3 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .answer-html ul, .answer-html ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<a href="/" class="back-btn">⬅ Back</a>
+
+<div class="card">
+    <h2>Your Question</h2>
+    <p><strong>{{ query }}</strong></p>
+
+    <h2>Answer</h2>
+
+    <!-- IMPORTANT CHANGE HERE -->
+    <div class="answer-html">
+        {{ answer | safe }}
+    </div>
+</div>
+
+</body>
+</html>
