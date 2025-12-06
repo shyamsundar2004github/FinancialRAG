@@ -1,4 +1,7 @@
-#**Financial RAG Pipeline for Multi-PDF Analysis (Text + Tables)**
+**Financial RAG Pipeline for Multi-PDF Analysis (Text + Tables)**
+
+<img width="1405" height="611" alt="image" src="https://github.com/user-attachments/assets/aad7a5df-58a0-4142-88f3-f487a6d59db4" />
+
 
 ---
 
